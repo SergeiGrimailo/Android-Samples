@@ -19,7 +19,15 @@
         <activity
             android:name=".navigation.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".content_sharing.SharingSimpleDataActivity" />
+        <activity android:name=".interaction_and_engagement.notifying.NotifyingActivity" />
+        <activity android:name=".interaction_and_engagement.notifying.NotificationDetailsActivity" />
+        <activity android:name=".user_interface.popup_messages.ShowingPopUpMessagesActivity" />
+        <activity android:name=".fundamentals.saving_data.SavingFilesActivity" />
+        <activity android:name=".user_interface.dialogs.DialogsActivity" />
+        <activity android:name=".user_interface.dialogs.ActivityAsDialogActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.MinWidth"/>
     </application>
 
 </manifest>

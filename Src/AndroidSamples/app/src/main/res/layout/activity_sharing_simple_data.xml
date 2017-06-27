@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmail.sgrimailo.androidsamples.content_sharing.SharingSimpleDataActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/bShareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onShareTextAction"
+        android:text="Share Text"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/bShareTextWithChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onShareTextWithChooserClick"
+        android:text="Share Text With Chooser"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/bShareText"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/bShareText"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/bShareText" />
+
+    <Button
+        android:id="@+id/bPickTextFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onPickTextFileClick"
+        android:text="Pick Text File"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/bShareTextWithChoose"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+</android.support.constraint.ConstraintLayout>

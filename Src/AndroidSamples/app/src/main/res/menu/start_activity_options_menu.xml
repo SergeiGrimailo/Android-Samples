@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Fundamentals">
+        <menu>
+            <item android:title="Saving Data">
+                <menu>
+                    <item android:id="@+id/saving_files_activity" android:title="Saving Files" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+    <item android:title="Interaction &amp; Engagement" >
+        <menu>
+            <item android:id="@+id/notifying_the_user" android:title="Notifying the User" />
+        </menu>
+    </item>
+
+    <item android:title="User Interface" >
+        <menu>
+            <item android:id="@+id/showing_pop_up_messages" android:title="Showing Pop-Up Messages"/>
+            <item android:id="@+id/show_dialogs_samples" android:title="Dialogs" />
+        </menu>
+    </item>
+
+
+</menu>
