@@ -25,5 +25,17 @@
         </menu>
     </item>
 
+    <item android:title="Content Sharing" >
+        <menu>
+            <item android:id="@+id/sharing_files" android:title="Sharing Files" />
+        </menu>
+    </item>
+
+    <item android:title="Content Provider" >
+        <menu>
+            <item android:id="@+id/storage_access_framework" android:title="Storage Access Framework" />
+        </menu>
+    </item>
+
 
 </menu>

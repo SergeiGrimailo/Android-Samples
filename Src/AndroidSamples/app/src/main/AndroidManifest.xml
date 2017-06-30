@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity">
+        <activity
+            android:name=".StartActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,8 +28,36 @@
         <activity android:name=".user_interface.popup_messages.ShowingPopUpMessagesActivity" />
         <activity android:name=".fundamentals.saving_data.SavingFilesActivity" />
         <activity android:name=".user_interface.dialogs.DialogsActivity" />
-        <activity android:name=".user_interface.dialogs.ActivityAsDialogActivity"
-            android:theme="@android:style/Theme.Holo.Dialog.MinWidth"/>
+        <activity
+            android:name=".user_interface.dialogs.ActivityAsDialogActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.MinWidth" />
+        <activity android:name=".content_providers.StorageAccessFrameworkActivity" />
+        <activity android:name=".content_sharing.SharingFilesActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gmail.sgrimailo.androidsamples.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".content_providers.DocumentActionsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_DOCUMENT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

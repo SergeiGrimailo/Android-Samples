@@ -3,10 +3,13 @@ package com.gmail.sgrimailo.androidsamples;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.gmail.sgrimailo.androidsamples.content_providers.StorageAccessFrameworkActivity;
+import com.gmail.sgrimailo.androidsamples.content_sharing.SharingFilesActivity;
 import com.gmail.sgrimailo.androidsamples.content_sharing.SharingSimpleDataActivity;
 import com.gmail.sgrimailo.androidsamples.fundamentals.saving_data.SavingFilesActivity;
 import com.gmail.sgrimailo.androidsamples.interaction_and_engagement.notifying.NotifyingActivity;
@@ -23,12 +26,16 @@ public class StartActivity extends AppCompatActivity {
     static {
         idToActivityMap.put(R.id.saving_files_activity, SavingFilesActivity.class);
         idToActivityMap.put(R.id.show_dialogs_samples, DialogsActivity.class);
+        idToActivityMap.put(R.id.sharing_files, SharingFilesActivity.class);
+        idToActivityMap.put(R.id.storage_access_framework, StorageAccessFrameworkActivity.class);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+
+        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
     }
 
     @Override
