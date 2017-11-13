@@ -15,6 +15,7 @@ import com.gmail.sgrimailo.androidsamples.fundamentals.saving_data.SavingFilesAc
 import com.gmail.sgrimailo.androidsamples.interaction_and_engagement.notifying.NotifyingActivity;
 import com.gmail.sgrimailo.androidsamples.navigation.NavigationDrawerActivity;
 import com.gmail.sgrimailo.androidsamples.user_interface.dialogs.DialogsActivity;
+import com.gmail.sgrimailo.androidsamples.user_interface.listview.MultichoiceListViewActivity;
 import com.gmail.sgrimailo.androidsamples.user_interface.popup_messages.ShowingPopUpMessagesActivity;
 
 import java.util.HashMap;
@@ -28,6 +29,7 @@ public class StartActivity extends AppCompatActivity {
         idToActivityMap.put(R.id.show_dialogs_samples, DialogsActivity.class);
         idToActivityMap.put(R.id.sharing_files, SharingFilesActivity.class);
         idToActivityMap.put(R.id.storage_access_framework, StorageAccessFrameworkActivity.class);
+        idToActivityMap.put(R.id.show_multichoice_listview, MultichoiceListViewActivity.class);
     }
 
     @Override

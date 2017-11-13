@@ -22,6 +22,7 @@
         <menu>
             <item android:id="@+id/showing_pop_up_messages" android:title="Showing Pop-Up Messages"/>
             <item android:id="@+id/show_dialogs_samples" android:title="Dialogs" />
+            <item android:id="@+id/show_multichoice_listview" android:title="Multichoice ListView"/>
         </menu>
     </item>
 

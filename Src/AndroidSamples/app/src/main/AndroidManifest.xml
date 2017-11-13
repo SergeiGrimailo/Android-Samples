@@ -47,17 +47,20 @@
         <activity android:name=".content_providers.DocumentActionsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_DOCUMENT" />
+
                 <category android:name="android.intent.category.OPENABLE" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
-
             <intent-filter>
-                <action android:name="android.intent.action.SEND"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="text/plain"/>
-            </intent-filter>
+                <action android:name="android.intent.action.SEND" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
+        <activity android:name=".user_interface.listview.MultichoiceListViewActivity"></activity>
     </application>
 
 </manifest>
